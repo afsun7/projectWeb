@@ -431,12 +431,7 @@ function App() {
             <div className="one_half overlay">
               <ul className="nospace">
                 <li>
-                  <blockquote>
-                    suscipit tellus non ligula mattis quis iaculis nunc lobortis
-                    vestibulum vehicula bibendum malesuada curabitur quis
-                    interdum mi vestibulum consectetur leo ut viverra sagittis
-                    sapien orci rhoncus nisi.
-                  </blockquote>
+                  <blockquote>{t(`sectionSeventh1`)}</blockquote>
                   <figure className="clear">
                     <img
                       className="circle"
@@ -445,14 +440,14 @@ function App() {
                     />
                     <figcaption>
                       <h6 className="heading">A. Doe</h6>
-                      <em>CEO / Odio tristique quis</em>
+                      <em>CEO / {t(`sectionSeventh2`)}</em>
                     </figcaption>
                   </figure>
                 </li>
                 <li>
                   <footer>
                     <a className="btn inverse" href="#">
-                      View More
+                      {t(`VIEW MORE`)}
                     </a>
                   </footer>
                 </li>
@@ -464,10 +459,10 @@ function App() {
         <div className="wrapper row3">
           <section className="hoc container clear">
             <div className="sectiontitle">
-              <p className="nospace font-xs">
-                Luctus ligula lacus non odio nunc
+              <p className="nospace font-xs">{t(`sectionEighthHeader`)}</p>
+              <p className="heading underline font-x2">
+                {t(`sectionEighthTitel`)}
               </p>
-              <p className="heading underline font-x2">Faucibus libero risus</p>
             </div>
             <ul id="latest" className="nospace group">
               <li className="one_third first">
@@ -485,16 +480,11 @@ function App() {
                     </li>
                   </ul>
                   <div className="excerpt">
-                    <h6 className="heading">
-                      Maecenas eu posuere velit eget ultricies enim
-                    </h6>
-                    <p>
-                      Sed nibh enim consequat ac tellus tempus interdum euismod
-                      ligula quisque quam nisl aliquet et facilisis eget.
-                    </p>
+                    <h6 className="heading">{t(`sectionEighthLeftTitel`)}</h6>
+                    <p>{t(`sectionEighthLeftHeader`)}</p>
                     <footer>
                       <a className="btn" href="#">
-                        Read More
+                        {t(`sectionEighthLeftBtn`)}
                       </a>
                     </footer>
                   </div>
@@ -515,16 +505,11 @@ function App() {
                     </li>
                   </ul>
                   <div className="excerpt">
-                    <h6 className="heading">
-                      Condimentum quis arcu nullam id purus tortor
-                    </h6>
-                    <p>
-                      Molestie vulputate a luctus nulla nulla eleifend justo in
-                      libero feugiat congue donec sit amet pharetra velit.
-                    </p>
+                    <h6 className="heading">{t(`sectionEighthMiddleTitel`)}</h6>
+                    <p>{t(`sectionEighthMiddleHeader`)}</p>
                     <footer>
                       <a className="btn" href="#">
-                        Read More
+                        {t("sectionEighthMiddleBtn")}
                       </a>
                     </footer>
                   </div>
@@ -545,16 +530,11 @@ function App() {
                     </li>
                   </ul>
                   <div className="excerpt">
-                    <h6 className="heading">
-                      Nulla tempor faucibus tortor nulla pretium
-                    </h6>
-                    <p>
-                      Cras auctor commodo metus sed pede in vitae sapien
-                      phasellus in magna sed dictum libero et nisi proin porta.
-                    </p>
+                    <h6 className="heading">{t(`sectionEighthRightTitel`)}</h6>
+                    <p>{t(`sectionEighthRightHeader`)}</p>
                     <footer>
                       <a className="btn" href="#">
-                        Read More
+                        {t(`sectionEighthRightBtn`)}
                       </a>
                     </footer>
                   </div>

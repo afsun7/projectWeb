@@ -71,7 +71,24 @@ const resources = {
       sectionSixth2: "EGESTAS MAXIMUS",
       sectionSixth3: "ALIQUAM NEQUE",
       sectionSixth4: "CURABITUR SODALES",
-      sectionSeventh:""
+      sectionSeventh1:
+        "suscipit tellus non ligula mattis quis iaculis nunc lobortis vestibulum vehicula bibendum malesuada curabitur quis interdum mi vestibulum consectetur leo ut viverra sagittis sapien orci rhoncus nisi.",
+      sectionSeventh2: "Odio tristique quis",
+      sectionSeventhBtn: "VIEW MORE",
+      sectionEighthHeader: "Luctus ligula lacus non odio nunc",
+      sectionEighthTitel: "Faucibus libero risus",
+      sectionEighthLeftTitel: " Maecenas eu posuere velit eget ultricies enim",
+      sectionEighthLeftHeader:
+        "Sed nibh enim consequat ac tellus tempus interdum euismod ligula quisque quam nisl aliquet et facilisis eget.",
+      sectionEighthLeftBtn: "Read More",
+      sectionEighthMiddleTitel: "Condimentum quis arcu nullam id purus tortor",
+      sectionEighthMiddleHeader:
+        "Molestie vulputate a luctus nulla nulla eleifend justo in libero feugiat congue donec sit amet pharetra velit.",
+      sectionEighthMiddleBtn: "Read More",
+      sectionEighthRightTitel: "Nulla tempor faucibus tortor nulla pretium",
+      sectionEighthRightHeader:
+        "Cras auctor commodo metus sed pede in vitae sapien phasellus in magna sed dictum libero et nisi proin porta.",
+      sectionEighthRightBtn: "Read More",
     },
   },
 
@@ -133,7 +150,25 @@ const resources = {
       sectionSixth2: "بزرگترین نیاز",
       sectionSixth3: "برخی نه",
       sectionSixth4: "از اعضا مراقبت خواهد شد",
-      
+      sectionSeventh1:
+        " زمین را نه لگولا ماتیس که اکنون هدف قرار می گیرد، ماشین دهلیز، وسیله نقلیه مراقبت می شود، که گاهی دهلیز من را تعقیب می کند، گویی شیر می خواهد تیرهای حکیم را بکشد، جز رنکوس.",
+
+      sectionSeventh2: "از کسی غمگین متنفرم",
+      sectionSeventhBtn: "بیشتر ببینید",
+      sectionEighthHeader: "الان از دریاچه ماتم متنفر نیستم",
+      sectionEighthTitel: "خنده گلو آزاد",
+      sectionEighthLeftTitel: " ماکینز میخواهد برای آینده هدفی تعیین کند",
+      sectionEighthLeftHeader:
+        "اما برای سطح نتیجه و زمان زمین، گاهی اوقات اویسمود کم است، اما هر یک به چیزهای بسیار و آسان نیاز دارد.",
+      sectionEighthLeftBtn: "بیشتر بخوانید",
+      sectionEighthMiddleTitel: "چاشنی، بدون تعظیم، این یک شکنجه ناب است",
+      sectionEighthMiddleHeader:
+        " هیچ عزاداری نیست که ایجاد مزاحمت نکند تا زمانی که در تکالیف رایگان است.",
+      sectionEighthMiddleBtn: "بیشتر بخوانید",
+      sectionEighthRightTitel: "هیچ وقت برای آچار گلو بدون قیمت",
+      sectionEighthRightHeader:
+        "فردا ممکن است نویسنده بترسد اما پایش در حکمت زندگی است.",
+      sectionEightRighttBtn: "بیشتر بخوانید",
     },
   },
 };
