@@ -91,6 +91,83 @@ const resources = {
       sectionEighthRightBtn: "Read More",
     },
   },
+  ar: {
+    translation: {
+      search: "بحث سريع",
+      head: "نهاية القول  لوبورت",
+      home: "المنزل ",
+      pages: "الصفحات",
+      drop: "اسقاط",
+      link: "نص الارتباط",
+      Gallery: "صالة عرض",
+      FullWidth: "العرض الكامل",
+      SidebarLeft: "الشريط الجانبي الأيسر",
+      SidebarRight: "الشريط الجانبي الأيمن",
+      BasicGrid: "الشبكة الأساسية",
+      FontIcons: "أيقونات الخط",
+      Level2: "المستوي 2",
+      Level2Drop: " المستوي 2 + يسقط",
+      Level3: "المستوي 33",
+      textPicture:
+        "  لن أفعل أي شيء سوى بحيرة أعضاء المجموعة مسؤولون فقط وسيحرص على أن يكون مسار السباق لا يعرف الخوف ",
+      btnLeftPicture: " حتى الجعبة",
+      btnRightpicture: "كتلة من السهام",
+      sectionHeader1: "قم بواجبك المنزلى",
+      section1:
+        "ستتبع خوف إينيان الخالص سهام في الكمامة ، التي تريد الآن أن تضحك حتى لو كانت حاملاً.",
+      sectionHeader2: "أعضاء مجانيون",
+      section2:
+        "وأهم ما في الرعاية الطبية هو الخوف من لاکینیا لیگولا ، ما لم يكن الأمر كذلك ، ولكن ليس بقدر الإليفين.",
+      sectionHeader3: "لوريت تورتور",
+      section3:
+        "أيضًا ، إذا لم يكن الأمر كذلك ، فسيتم مطاردة شوكولاتي بالعشب أو عنصر السرير غدًا لأهم الأغراض.",
+      sectiontitle: "في الواقع ، من السهل العناية به",
+      sectionOverview: "ألم عند الأطفال",
+      sectionThirdHeader1: "الباني مصنوع",
+      sectionThirdOverview1:
+        "  يحتاج الأسد أحيانًا إلى بترغدا سأدفع والثمن الذي أريده الآن هو سعر الشوكولاتة ",
+      sectionThirdHeader2: "بعض الاحيان",
+      sectionThirdOverview2:
+        "سهام القوس من الحاجة الماسة للبحيرة ستتم متابعتها لغرض تمويل مشروب الموظف نفسه كأرض..",
+      sectionThirdHeader3: "الخوف من الوادي",
+      sectionThirdOverview3:
+        "يتغذى الطبيب ولن يعتني موريس والمكسيموس الحامل بكتلة الوادي ولكن الجرة ستوضع لكن الوقت سيكون.",
+      sectionThirdBtn: "ماتي لوبي",
+      sectionFourth1: "لاعب كرة سلة عظيم موقوف",
+      sectionFourth2: "لنعيش إلى الأبد",
+      sectionFourth3: "الأرض أو شبه النصف الناعم",
+      sectionFourth4:
+        "البحيرة لا تستحق الثمن ، وأحيانًا لا تستحق ذلك من الواضح أن الكراهية مقيدة بالكراهية أميت لاسينيا بروتين الألم في اللاعبين تلاه تملق كرة القدم.",
+      sectionFourthBtn: "خميرة القط",
+      sectionFifthHeader: "هذا العنصر من السياسة فقط حتى",
+      sectionFifthTitle: "ماكياج ولكن الرسوم",
+      sectionFifthCard: "المسمى الوظيفي هنا",
+      sectionSixthHeader: "بقدر ما تحتاجه الحياة",
+      sectionSixthTitel: "النخبة المصبوغة تريد أن تزن",
+      sectionSixth1: "حبوب الصباغة",
+      sectionSixth2: "أعظم حاجة",
+      sectionSixth3: "بعض ولا",
+      sectionSixth4: "سيتم الاعتناء بالأعضاء",
+      sectionSeventh1:
+        " وليس  ، الذي تم استهدافه الآن ، سيتم الاعتناء بسيارة الدهليز ، والمركبات التي يجب أن تكون في حالة سكر ، والتي ستطارد أحيانًا دهليزي ، الأسد ، مثل الرسوم المتحركة ، الحكيم ، orci ، إن لم يكن.",
+      sectionSeventh2: "أنا أكره حزين أي شخص",
+      sectionSeventhBtn: "عرض المزيد",
+      sectionEighthHeader: "أنا لا أكره بحيرة الحداد الآن",
+      sectionEighthTitel: "الضحك خالي من الحلق",
+      sectionEighthLeftTitel: " يريد ماسناس تحديد هدف للمستقبل",
+      sectionEighthLeftHeader:
+        "لكن بالنسبة لمستوى النتيجة ووقت الأرض ، أحيانًا يكون أداء صغيرًا ، لكن كل واحد يحتاج إلى الكثير من الأشياء السهلة.",
+      sectionEighthLeftBtn: "اقرأ أكثر",
+      sectionEighthMiddleTitel: "التوابل ، لا القوس ، هذا عذاب خالص",
+      sectionEighthMiddleHeader:
+        "لم تكن هناك مشكلة في الحداد  فقط في واجبات فوگیات المنزلية المجانية حتى يصبح الجو باردًا حقًا.",
+      sectionEighthMiddleBtn: "اقرأ أكثر",
+      sectionEighthRightTitel: "لا يوجد وقت لعذاب الحلق بلا ثمن",
+      sectionEighthRightHeader:
+        "غدا قد يخاف الكاتب ، ولكن قدمه في حكمة الحياة.",
+      sectionEighthRightBtn: "اقرأ أكثر",
+    },
+  },
 
   fr: {
     translation: {

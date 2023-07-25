@@ -16,6 +16,11 @@ function App() {
     elem.dir = "rtl";
     i18n.changeLanguage("fr");
   }
+  function changeArabic() {
+    const elem = document.getElementById("top");
+    elem.dir = "rtl";
+    i18n.changeLanguage("ar");
+  }
   return (
     <>
       <body id="top">
@@ -87,7 +92,7 @@ function App() {
             <header id="header" className="hoc clear">
               <div
                 id="logo"
-                className="fl_left"
+                className="fl_left "
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -95,13 +100,24 @@ function App() {
                 }}
               >
                 <h1>
-                  <a href="index.html">Sislaf</a>
+                  <a href="index.html ">Sislaf</a>
                 </h1>
-                <div className="persian" onClick={changePersian}>
+                <div className="persian " onClick={changePersian}>
                   فارسی
                 </div>
-                <div className="engilsh" onClick={changeEnglish}>
-                  english
+                <div
+                  className="engilsh"
+                  onClick={changeEnglish}
+                  style={{ paddingLeft: "0.5rem" }}
+                >
+                  English
+                </div>
+                <div
+                  className="arabic"
+                  onClick={changeArabic}
+                  style={{ paddingLeft: "0.5rem" }}
+                >
+                  عربی
                 </div>
               </div>
               <nav id="mainav" className="fl_right">
