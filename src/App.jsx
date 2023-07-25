@@ -1,10 +1,10 @@
-import { Suspense } from "react";
-import { useTranslation } from "react-i18next";
+import { Suspense, useContext } from "react";
 import "./App.css";
-import Header from "./component/headre/Header";
 
+import { useTranslation } from "react-i18next";
+import { DirectionContext } from "./assets/context/DirectionContext";
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useContext(DirectionContext);
 
   function changeEnglish() {
     const elem = document.getElementById("top");
