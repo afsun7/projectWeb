@@ -1,26 +1,12 @@
 import { Suspense, useContext } from "react";
-import "./App.css";
-
-import { useTranslation } from "react-i18next";
 import { DirectionContext } from "./assets/context/DirectionContext";
-function App() {
-  const { t, i18n } = useContext(DirectionContext);
 
-  function changeEnglish() {
-    const elem = document.getElementById("top");
-    elem.dir = "ltr";
-    i18n.changeLanguage("en");
-  }
-  function changePersian() {
-    const elem = document.getElementById("top");
-    elem.dir = "rtl";
-    i18n.changeLanguage("fr");
-  }
-  function changeArabic() {
-    const elem = document.getElementById("top");
-    elem.dir = "rtl";
-    i18n.changeLanguage("ar");
-  }
+import "./App.css";
+import Header from "./component/header/Header";
+
+function App() {
+  const { t} = useContext(DirectionContext);
+
   return (
     <>
       <body id="top">
@@ -32,169 +18,7 @@ function App() {
             backgroundImage: `url(./src/assets/images/demo/backgrounds/01.png)`,
           }}
         >
-          <div className="wrapper row0">
-            <div id="topbar" className="hoc clear">
-              <div className="fl_left">
-                <ul className="nospace">
-                  <li>
-                    <i className="fas fa-phone rgtspace-5"></i> +00 (123) 456
-                    7890
-                  </li>
-                  <li>
-                    <i className="far fa-envelope rgtspace-5"></i>{" "}
-                    info@domain.com
-                  </li>
-                </ul>
-              </div>
-              <div className="fl_right">
-                <ul className="nospace">
-                  <li>
-                    <a href="index.html">
-                      <i className="fas fa-home"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="Help Centre">
-                      <i className="far fa-life-ring"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="Login">
-                      <i className="fas fa-sign-in-alt"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="Sign Up">
-                      <i className="fas fa-edit"></i>
-                    </a>
-                  </li>
-                  <li id="searchform">
-                    <div>
-                      <form action="#" method="post">
-                        <fieldset>
-                          <legend>{t(`search`)}</legend>
-                          <input
-                            type="text"
-                            placeholder="Enter search term&hellip;"
-                          />
-                          <button type="submit">
-                            <i className="fas fa-search"></i>
-                          </button>
-                        </fieldset>
-                      </form>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="wrapper row1">
-            <header id="header" className="hoc clear">
-              <div
-                id="logo"
-                className="fl_left "
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  direction: "ltr",
-                }}
-              >
-                <h1>
-                  <a href="index.html ">Sislaf</a>
-                </h1>
-                <div className="persian " onClick={changePersian}>
-                  فارسی
-                </div>
-                <div
-                  className="engilsh"
-                  onClick={changeEnglish}
-                  style={{ paddingLeft: "0.5rem" }}
-                >
-                  English
-                </div>
-                <div
-                  className="arabic"
-                  onClick={changeArabic}
-                  style={{ paddingLeft: "0.5rem" }}
-                >
-                  عربی
-                </div>
-              </div>
-              <nav id="mainav" className="fl_right">
-                <ul className="clear">
-                  <li className="active">
-                    <a href="index.html">{t("home")}</a>
-                  </li>
-                  <li>
-                    <a className="drop" href="#">
-                      {t("pages")}
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="pages/gallery.html">{t("Gallery")}</a>
-                      </li>
-                      <li>
-                        <a href="pages/full-width.html">{t("FullWidth")}</a>
-                      </li>
-                      <li>
-                        <a href="pages/sidebar-left.html">{t("SidebarLeft")}</a>
-                      </li>
-                      <li>
-                        <a href="pages/sidebar-right.html">
-                          {t("SidebarRight")}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="pages/basic-grid.html">{t("BasicGrid")}</a>
-                      </li>
-                      <li>
-                        <a href="pages/font-icons.html">{t("FontIcons")}</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a className="drop" href="#">
-                      {t("drop")}
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">{t("Level2")}</a>
-                      </li>
-                      <li>
-                        <a className="drop" href="#">
-                          {t("Level2Drop")}
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="#">{t("Level3")}</a>
-                          </li>
-                          <li>
-                            <a href="#">{t("Level3")}</a>
-                          </li>
-                          <li>
-                            <a href="#">{t("Level3")}</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">{t("Level2")}</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">{t("link")}</a>
-                  </li>
-                  <li>
-                    <a href="#">{t("link")}</a>
-                  </li>
-                  <li>
-                    <a href="#">{t("link")}</a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          </div>
-
+          <Header />
           <div id="pageintro" className="hoc clear">
             <article>
               <h3 className="heading">{t("head")}</h3>
