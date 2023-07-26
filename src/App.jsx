@@ -1,11 +1,13 @@
 import { Suspense, useContext } from "react";
 import { DirectionContext } from "./assets/context/DirectionContext";
 
-import "./App.css";
 import Header from "./component/header/Header";
+import { ArticlePicture } from "./component/articlePicture/ArticlePicture";
+import { Main } from "./component/main/Main";
+import "./App.css";
 
 function App() {
-  const { t} = useContext(DirectionContext);
+  const { t } = useContext(DirectionContext);
 
   return (
     <>
@@ -19,125 +21,11 @@ function App() {
           }}
         >
           <Header />
-          <div id="pageintro" className="hoc clear">
-            <article>
-              <h3 className="heading">{t("head")}</h3>
-              <p>{t(`textPicture`)}</p>
-              <footer>
-                <ul className="nospace inline pushright">
-                  <li>
-                    <a className="btn" href="#">
-                      {t(`btnLeftPicture`)}
-                    </a>
-                  </li>
-                  <li>
-                    <a className="btn inverse" href="#">
-                      {t(`btnRightpicture`)}
-                    </a>
-                  </li>
-                </ul>
-              </footer>
-            </article>
-          </div>
+          <ArticlePicture />
         </div>
         {/* <!-- End Top Background Image Wrapper --> */}
 
-        <div className="wrapper row3">
-          <main className="hoc container clear">
-            {/* <!-- main body --> */}
-
-            <section id="introblocks">
-              <ul className="nospace group btmspace-80">
-                <li className="one_third first">
-                  <figure>
-                    <a className="imgover" href="#">
-                      <img src="./src/assets/images/demo/348x261.png" alt="" />
-                    </a>
-                    <figcaption>
-                      <h6 className="heading">{t(`sectionHeader1`)}</h6>
-                      <p>{t(`section1`)}</p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li className="one_third">
-                  <figure>
-                    <a className="imgover" href="#">
-                      <img src="./src/assets/images/demo/348x261.png" alt="" />
-                    </a>
-                    <figcaption>
-                      <h6 className="heading">{t(`sectionHeader2`)}</h6>
-                      <p className="">{t(`section2`)}</p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li className="one_third">
-                  <figure>
-                    <a className="imgover" href="#">
-                      <img src="./src/assets/images/demo/348x261.png" alt="" />
-                    </a>
-                    <figcaption>
-                      <h6 className="heading">{t(`sectionHeader3`)}</h6>
-                      <p>{t(`section3`)}</p>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </section>
-
-            <hr className="btmspace-80" />
-
-            <section id="overview">
-              <div className="sectiontitle">
-                <p className="nospace font-xs">{t(`sectiontitle`)}</p>
-                <p className="heading underline font-x2">
-                  {t(`sectionOverview`)}
-                </p>
-              </div>
-              <ul className="nospace group btmspace-80">
-                <li className="one_third">
-                  <article>
-                    <div className="clear">
-                      <a href="#">
-                        <i className="fas fa-tape"></i>
-                      </a>
-                      <h6 className="heading">{t(`sectionThirdHeader1`)}</h6>
-                    </div>
-                    <p>{t(`sectionThirdOverview1`)}</p>
-                  </article>
-                </li>
-                <li className="one_third">
-                  <article>
-                    <div className="clear">
-                      <a href="#">
-                        <i className="fas fa-table-tennis"></i>
-                      </a>
-                      <h6 className="heading">{t(`sectionThirdHeader2`)}</h6>
-                    </div>
-                    <p>{t(`sectionThirdOverview2`)}</p>
-                  </article>
-                </li>
-                <li className="one_third">
-                  <article>
-                    <div className="clear">
-                      <a href="#">
-                        <i className="fas fa-people-carry"></i>
-                      </a>
-                      <h6 className="heading">{t(`sectionThirdHeader3`)}</h6>
-                    </div>
-                    <p>{t(`sectionThirdOverview3`)}</p>
-                  </article>
-                </li>
-              </ul>
-              <footer className="center">
-                <a className="btn" href="#">
-                  {t(`sectionThirdBtn`)}
-                </a>
-              </footer>
-            </section>
-            {/* main body  */}
-            <div className="clear"></div>
-          </main>
-        </div>
+        <Main />
 
         <div
           className="bgded overlay"
