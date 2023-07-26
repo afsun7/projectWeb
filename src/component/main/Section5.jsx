@@ -2,6 +2,24 @@ import { useContext } from "react";
 import { DirectionContext } from "../../assets/context/DirectionContext";
 
 export function Section5() {
+  const section5 = [
+    { className: "fab fa-sticker-mule", number: 123, textP: "sectionSixth1" },
+    {
+      className: "fab fa-pied-piper-alt",
+      number: 1234,
+      textP: "sectionSixth2",
+    },
+    {
+      className: "fab fa-pied-piper-alt",
+      number: 12345,
+      textP: "sectionSixth3",
+    },
+    {
+      className: "fas fa-ribbon",
+      number: 6789,
+      textP: "sectionSixth4",
+    },
+  ];
   const { t } = useContext(DirectionContext);
   return (
     <div className="wrapper row3">
@@ -11,34 +29,15 @@ export function Section5() {
           <p className="heading underline font-x2">{t(`sectionSixthTitel`)}</p>
         </div>
         <ul id="stats" className="nospace group">
-          <li>
-            <i className="fab fa-sticker-mule"></i>
-            <p>
-              <a href="#">123</a>
-            </p>
-            <p>{t(`sectionSixth1`)}</p>
-          </li>
-          <li>
-            <i className="fab fa-pied-piper-alt"></i>
-            <p>
-              <a href="#">1234</a>
-            </p>
-            <p>{t(`sectionSixth2`)}</p>
-          </li>
-          <li>
-            <i className="fas fa-globe"></i>
-            <p>
-              <a href="#">12345</a>
-            </p>
-            <p>{t(`sectionSixth3`)}</p>
-          </li>
-          <li>
-            <i className="fas fa-ribbon"></i>
-            <p>
-              <a href="#">6789</a>
-            </p>
-            <p>{t(`sectionSixth4`)}</p>
-          </li>
+          {section5.map((card) => (
+            <li>
+              <i className={card.className}></i>
+              <p>
+                <a href="#">{card.number}</a>
+              </p>
+              <p>{t(card.textP)}</p>
+            </li>
+          ))}
         </ul>
       </section>
     </div>
