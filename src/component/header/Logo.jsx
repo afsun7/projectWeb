@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { DirectionContext } from "../../assets/context/DirectionContext";
 
 export function Logo() {
-  const {changeArabic, changeEnglish, changePersian } =
+  const { changeArabic, changeEnglish, changePersian } =
     useContext(DirectionContext);
   return (
     <div

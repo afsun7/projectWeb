@@ -1,54 +1,46 @@
 import { useContext } from "react";
 import { DirectionContext } from "../../assets/context/DirectionContext";
+import { Section2Footer } from "./Section2Footer";
+import { Section2Header } from "./Section2Header";
 
 export function Section2() {
   const { t } = useContext(DirectionContext);
+  const section2 = [
+    {
+      className: "fas fa-tape",
+      textH6: "sectionThirdHeader1",
+      textP: "sectionThirdOverview1",
+    },
+    {
+      className: "fas fa-table-tennis",
+      textH6: "sectionThirdHeader2",
+      textP: "sectionThirdOverview2",
+    },
+    {
+      className: "fas fa-people-carry",
+      textH6: "sectionThirdHeader3",
+      textP: "sectionThirdOverview3",
+    },
+  ];
   return (
     <section id="overview">
-      <div className="sectiontitle">
-        <p className="nospace font-xs">{t(`sectiontitle`)}</p>
-        <p className="heading underline font-x2">{t(`sectionOverview`)}</p>
-      </div>
+      <Section2Header />
       <ul className="nospace group btmspace-80">
-        <li className="one_third">
-          <article>
-            <div className="clear">
-              <a href="#">
-                <i className="fas fa-tape"></i>
-              </a>
-              <h6 className="heading">{t(`sectionThirdHeader1`)}</h6>
-            </div>
-            <p>{t(`sectionThirdOverview1`)}</p>
-          </article>
-        </li>
-        <li className="one_third">
-          <article>
-            <div className="clear">
-              <a href="#">
-                <i className="fas fa-table-tennis"></i>
-              </a>
-              <h6 className="heading">{t(`sectionThirdHeader2`)}</h6>
-            </div>
-            <p>{t(`sectionThirdOverview2`)}</p>
-          </article>
-        </li>
-        <li className="one_third">
-          <article>
-            <div className="clear">
-              <a href="#">
-                <i className="fas fa-people-carry"></i>
-              </a>
-              <h6 className="heading">{t(`sectionThirdHeader3`)}</h6>
-            </div>
-            <p>{t(`sectionThirdOverview3`)}</p>
-          </article>
-        </li>
+        {section2.map((card) => (
+          <li className="one_third">
+            <article>
+              <div className="clear">
+                <a href="#">
+                  <i className={card.className}></i>
+                </a>
+                <h6 className="heading">{t(card.textH6)}</h6>
+              </div>
+              <p>{t(card.textP)}</p>
+            </article>
+          </li>
+        ))}
       </ul>
-      <footer className="center">
-        <a className="btn" href="#">
-          {t(`sectionThirdBtn`)}
-        </a>
-      </footer>
+      <Section2Footer />
     </section>
   );
 }
