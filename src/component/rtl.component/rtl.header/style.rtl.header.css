@@ -1,0 +1,27 @@
+
+
+                  /* ******header****** */
+
+  /* icons */
+
+.rtlIconsSearch::after {
+   margin-right: 100%;
+}
+   
+  /* nav */
+
+.rtlNavPages li a{
+   text-align: right ;
+}
+.rtlNavPages li:last-child {
+    margin-right: 0 !important;
+}
+.rtlNavPages ul {
+    right: 180px;
+}
+
+/* ----------------------------------------------------------------------- */
+    
+    /* *******main****** */
+
+
