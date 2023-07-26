@@ -5,13 +5,16 @@ import Header from "./component/header/Header";
 import { ArticlePicture } from "./component/articlePicture/ArticlePicture";
 import { Main } from "./component/main/Main";
 import "./App.css";
+import RtlHeader from "./component/rtl.component/rtl.header/RtlHeader";
 
 function App() {
-  const { t } = useContext(DirectionContext);
+  const { t, direction } = useContext(DirectionContext);
 
   return (
+
     <>
       <body id="top">
+     
         {/* <!-- Top Background Image Wrapper --> */}
         {/* <Header changeEnglish={changeEnglish} changePersian={changePersian} t={t} /> */}
         <div
@@ -20,7 +23,12 @@ function App() {
             backgroundImage: `url(./src/assets/images/demo/backgrounds/01.png)`,
           }}
         >
-          <Header />
+
+        {
+          direction == "ltr" ? <Header /> :  <RtlHeader />
+        }
+          
+          
           <ArticlePicture />
         </div>
         {/* <!-- End Top Background Image Wrapper --> */}

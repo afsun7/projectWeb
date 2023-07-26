@@ -1,8 +1,10 @@
-import { useContext } from "react";
-import { DirectionContext } from "../../assets/context/DirectionContext";
 
-export function Logo() {
-  const {changeArabic, changeEnglish, changePersian} =
+
+import { useContext } from "react";
+import { DirectionContext } from './../../../assets/context/DirectionContext';
+
+export function RtlLogo() {
+  const {changeArabic, changeEnglish, changePersian } =
     useContext(DirectionContext);
   return (
     <div
@@ -15,7 +17,7 @@ export function Logo() {
       }}
     >
       <h1>
-        <a href="index.html ">Sislaf</a>
+        <a href="index.html">Sislaf</a>
       </h1>
       <div className="persian " onClick={changePersian}>
         فارسی
